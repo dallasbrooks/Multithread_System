@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# https://clang.llvm.org/docs/ClangFormat.html
+# --staged = format lines in the stage instead of the working dir
+# --quiet  = print less information
+git clang-format --staged --quiet
