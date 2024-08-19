@@ -1,9 +1,14 @@
 cmake_minimum_required(VERSION 3.5)
 project(Multithread_System C CXX)
 
-set(SOURCES ${sources} Main/main.cpp)
+add_executable(Multithread_System main.cpp)
 
-include_directories(${CMAKE_CURRENT_LIST_DIR}
-                    ${CMAKE_CURRENT_LIST_DIR}/Main)
+include_directories(".")
 
-add_executable(Multithread_System ${SOURCES})
+add_subdirectory(Main)
+add_subdirectory(Utility)
+
+target_link_libraries(Multithread_System PRIVATE
+    Main
+    Utility
+)
