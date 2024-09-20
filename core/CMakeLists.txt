@@ -5,10 +5,14 @@ add_executable(Multithread_System main.cpp)
 
 include_directories(".")
 
+add_subdirectory(Component)
 add_subdirectory(Main)
+add_subdirectory(Payload)
 add_subdirectory(Utility)
 
 target_link_libraries(Multithread_System PRIVATE
+    Component
     Main
+    Payload
     Utility
 )
