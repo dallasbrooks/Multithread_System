@@ -1,7 +1,7 @@
 {
-    "C_Cpp.intelliSenseEngine": "Disabled",
-    "cmake.buildDirectory": "${workspaceFolder}/../build-${buildType}",
-    "cmake.copyCompileCommands": "${workspaceFolder}/../build/compile_commands.json",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "cmake.buildDirectory": "${workspaceFolder}/build-${buildType}",
+    "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
     "cmake.debugConfig": {
         "MIMode": "gdb",
         "setupCommands": [
